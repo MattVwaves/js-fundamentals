@@ -8,12 +8,13 @@ const NUM = 9
 // AND is less than or equal to the UPPER variable
 let answerOne
 
-
-
+if (NUM >=4 && NUM <=17){
+    answerOne = true
+    console.log('answerOne is true:', true)
+}
 // ---- //
 
-// Task 2
-const STR = null
+const STR = "Hello"
 
 // Use conditional statements to set the answerTwo variable below to true
 // if the STR variable is 'Hello' or 'Goodbye'
@@ -22,12 +23,27 @@ const STR = null
 // to verify your code is correct
 let answerTwo
 
+isHellorGod = STR === "Hello" || STR === "Goodbye"
+
+if (isHellorGod) {
+    answerTwo = true
+    console.log('answerTwo is:', answerTwo)
+} else{
+    answerTwo = false
+    console.log('answerTwo is:', answerTwo)
+}
 
 
-// ---- //
 
-// Task 3
-const AGE = 0
+
+
+
+
+
+// Run the test after changing the AGE value to verify you've successfully
+// accounted for each age range
+
+const AGE = 2588888888888888888888888
 
 // Use conditional statements to set the answerThree variable below to a
 // string value based on what the AGE variable is set to.
@@ -43,11 +59,31 @@ const AGE = 0
 // 20+    | Adult
 let answerThree
 
+if (AGE <=0){
+    answerThree = "Baby"
+    console.log('humanoid is;', answerThree)
+
+} else if (AGE >=1 && AGE <=4) {
+    answerThree = "Toddler"
+    console.log('humanoid is;', answerThree)
+
+} else if (AGE >=5 && AGE <=12) {
+    answerThree = "Child"
+    console.log('humanoid is;', answerThree)
+
+} else if (AGE >=13 && AGE <=19) {
+    answerThree = "Teenager"
+    console.log('humanoid is;', answerThree)
+
+} else if (AGE >=20) {
+    answerThree = "Adult"
+    console.log('humanoid is;', answerThree)
+
+} 
+
 
 // Run the test after changing the AGE value to verify you've successfully
 // accounted for each age range
-
-
 
 // Don't touch the code below this line
 module.exports = {
