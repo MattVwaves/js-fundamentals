@@ -10,6 +10,19 @@
 //
 // TODO: write code below
 
+function numberFill(lowNum, highNum){
+  let allNumbers = []
+
+  for (i = lowNum; i <= highNum; i++){
+      allNumbers.push(i)
+  }
+
+  return allNumbers
+}
+
+console.log(numberFill(-1, 1))
+
+
 // define a function that takes two arguments: a string and a number.
 // The function should return the same string but in upper case with exclamation
 // marks appended to the end. The number of exclamation marks should be
@@ -22,8 +35,16 @@
 //
 // TODO: write code below
 
+function makeSerious(str, num){
+  str = str.toUpperCase()
+  for (i = 1; i <= num; i++){
+      str = str + "!"
+  }
+  return str
+}
+
 // change the exported value to be the name of the function you defined
 module.exports = {
-  a: undefined, // change undefined to be the name of the function defined to create the range of numbers (the first todo)
-  b: undefined // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
+  a: numberFill, // change undefined to be the name of the function defined to create the range of numbers (the first todo)
+  b: makeSerious // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
 }
